@@ -1318,7 +1318,7 @@
         const buttonParent = button.parentElement;
         const buttonClone = button.cloneNode(true);
         buttonParent.replaceChild(buttonClone, button);
-        input.placeholder = '请输入密码';
+        input.placeholder = 'Enter Password';
         buttonClone.addEventListener('click', (event) => {
           const passwd = input.value;
           if (!input.value) {
@@ -2377,16 +2377,16 @@
           <div class="preview">
             <div class="info">
               <div class="file-name"></div>
-              <div class="btn download">下载</div>
-              <div class="btn quote">引用</div>
-              <div class="btn share">分享</div>
+              <div class="btn download">download</div>
+              <div class="btn quote">quote</div>
+              <div class="btn share">share</div>
             </div>
             <div class="content"></div>
           </div>
           <div class="password-wrapper">
             <div class="password">
               <input type="password" />
-              <button>提交</button>
+              <button>login</button>
             </div>
           </div>
           <div class="file-upload-wrapper">
@@ -2394,8 +2394,8 @@
               <select
                 onchange="document.getElementById('file-upload-input').webkitdirectory=this.value;"
               >
-                <option value="">上传文件</option>
-                <option value="1">上传文件夹</option>
+                <option value="">file</option>
+                <option value="1">folder</option>
               </select>
               <label for="file-upload-input" class="file-upload-label"
                 >选择文件</label
@@ -2407,7 +2407,7 @@
                 multiple="multiple"
               />
               <span class="file-upload-name">未选择文件</span>
-              <button onclick="uploadFiles()">上传</button>
+              <button onclick="uploadFiles()">upload</button>
             </div>
             <div class="file-upload-progress"></div>
           </div>
